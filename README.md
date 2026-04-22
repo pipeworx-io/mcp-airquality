@@ -1,34 +1,54 @@
-# @pipeworx/mcp-airquality
+# mcp-airquality
 
-MCP server for the [Open-Meteo Air Quality API](https://air-quality-api.open-meteo.com) — current air quality conditions and hourly forecasts by location. Free, no auth required.
+Air Quality MCP — wraps air-quality-api.open-meteo.com (free, no auth)
+
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 250+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `get_air_quality` | Current AQI, PM2.5, PM10, CO, NO2, and ozone for a location |
-| `get_forecast` | Hourly air quality forecast (1-7 days) |
 
 ## Quick Start
 
-Add to your MCP client config:
+Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 
 ```json
 {
   "mcpServers": {
     "airquality": {
-      "type": "url",
-      "url": "https://gateway.pipeworx.io/airquality"
+      "url": "https://gateway.pipeworx.io/airquality/mcp"
     }
   }
 }
 ```
 
-## CLI Usage
+Or connect to the full Pipeworx gateway for access to all 250+ data sources:
 
-```bash
-npx @anthropic-ai/mcp-client https://gateway.pipeworx.io/airquality
+```json
+{
+  "mcpServers": {
+    "pipeworx": {
+      "url": "https://gateway.pipeworx.io/mcp"
+    }
+  }
+}
 ```
+
+## Using with ask_pipeworx
+
+Instead of calling tools directly, you can ask questions in plain English:
+
+```
+ask_pipeworx({ question: "your question about Airquality data" })
+```
+
+The gateway picks the right tool and fills the arguments automatically.
+
+## More
+
+- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [pipeworx.io](https://pipeworx.io)
 
 ## License
 
