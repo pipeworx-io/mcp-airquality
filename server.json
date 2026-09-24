@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/airquality",
+  "title": "Airquality",
+  "description": "Air Quality MCP — wraps air-quality-api.open-meteo.com (free, no auth)",
+  "version": "0.1.1",
+  "websiteUrl": "https://pipeworx.io/packs/airquality",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-airquality",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/airquality/mcp"
+    }
+  ]
+}
