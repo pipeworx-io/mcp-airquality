@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-airquality",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Air Quality MCP — wraps air-quality-api.open-meteo.com (free, no auth)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-20c46636fe0b7c36049eab8039c117f9196159ca45b3d1d8a1ba38ac80e4d3ac",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-83d844a832796112a70762568f355072694a639003718e7c2b5adb166185e03f",
+    "sourceCommit": "dca20ba6e13a9aa1c9f2918fc2ddaffe4cc30e5c"
   }
 }
