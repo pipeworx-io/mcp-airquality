@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/airquality",
   "title": "Airquality",
   "description": "Air Quality MCP — wraps air-quality-api.open-meteo.com (free, no auth)",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "websiteUrl": "https://pipeworx.io/packs/airquality",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-airquality",
