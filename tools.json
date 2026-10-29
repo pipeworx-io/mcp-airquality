@@ -1,0 +1,48 @@
+[
+  {
+    "name": "get_air_quality",
+    "description": "Check current air quality at a location (latitude/longitude or city name, e.g., \"40.7128, -74.0060\" or \"New York\"). Returns US AQI score, PM2.5, PM10, CO, NO2, and ozone levels.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "description": "Latitude of the location."
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude of the location."
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ]
+    }
+  },
+  {
+    "name": "get_forecast",
+    "description": "Get hourly air quality forecast for a location. Returns US AQI, PM2.5, and PM10 predictions. Use to plan activities or alert users to upcoming poor air conditions.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "description": "Latitude of the location."
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude of the location."
+        },
+        "days": {
+          "type": "number",
+          "description": "Number of forecast days (1-7, default 3)."
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ]
+    }
+  }
+]
